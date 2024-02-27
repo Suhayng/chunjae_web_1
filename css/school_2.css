@@ -1,3 +1,5 @@
+
+/* PC 화면 */
 @media screen and (min-width: 1024px)
 , screen and (min-height: 1024px)
 and (orientation: landscape) {
@@ -5,5 +7,200 @@ and (orientation: landscape) {
         margin: 0;
         padding: 0;
     }
+
+    #wrap {
+        width: 100%;
+        margin: 0 auto;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    /* header 부분 */
+    .header_wrap {
+        border: 1px solid silver;
+    }
+
+    header nav {
+        position: relative;
+        flex-wrap: nowrap;
+    }
+
+    /* 로고 */
+    header .main_menu .logo a > img {
+        position: relative;
+        left: 15vw;
+        top: 55px;
+        width: 200px;
+    }
+
+    /* 메인 메뉴바 */
+    header .menu .main_menu .dept1 {
+        display: inline-block;
+    }
+
+    header .menu .main_menu .dept1 a {
+        position: relative;
+        left: 36vw;
+        font-size: 1.2rem;
+        /*padding: 1.2vw 1.2vw 0vw 1.2vw;*/
+        padding: 1rem;
+        color: black;
+
+
+    }
+
+    /* 전체 메뉴 숨김 처리 */
+    nav .main_menu .dept1 .inner_menu .dept2 {
+        display: none;
+    }
+
+    /* 상단 아이콘 */
+    header .header_wrap .icon {
+        position: relative;
+        left: 80vw;
+        top: -3vh;
+    }
+
+    header .header_wrap .icon a img {
+        width: 1.7vw;
+        padding: 0.3vw;
+    }
+
+    /* 밀크T 배너 */
+    .banner {
+        background-color: #353d57;
+        padding: 5vw;
+    }
+
+    .banner .inner_content h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner .inner_content h2 img {
+        width: 20vw;
+    }
+
+    /*  배너 애니메이션
+        .ani {
+
+        }
+
+        .ani .obj1 img {
+            width: 10px;
+            vertical-align: middle;
+            border: 0;
+            overflow-clip-margin: ;
+            overflow: clip;
+        }
+    */
+
+    /* 중점 학습 가이드 text */
+    .txt_wrap {
+        padding: 4.5vw;
+        background-color: rgb(51, 55, 66);
+        color: whitesmoke;
+    }
+
+    .txt_wrap .inner_content h6 {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: -1vh;
+        font-size: 1.5vw;
+        letter-spacing: 2px;   /* 글자 간격 */
+
+    }
+
+    .txt_wrap .inner_content p {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        font-size: 2.5vw;
+        font-weight: bolder;
+    }
+
+    /* 중점 학습 가이드 강조 */
+    .txt_wrap .inner_content span {
+      color: #00CAFF;
+    }
+
+    /* 키즈 section */
+    .kids {
+        background-color: rgb(255, 242, 212);
+        padding: 5vw 30vw 5vw 30vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .kids .inner_gd {
+        background-color: whitesmoke;
+        /*display: flex;*/
+        /*justify-content: center;*/
+        padding: 0 0 10vw 0;
+    }
+
+    .kids .inner_gd .content_box {
+    }
+
+    /* 키즈 (7세 예비초)*/
+
+
+    .content_box .grade {
+        display: block;
+    }
+
+    .content_box .grade img {
+        position: relative;
+        left: 18vw;
+        width: 23vw;
+    }
+
+    .content_box .contWrap{
+        display: block;
+    }
+
+    .content_box .contWrap {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    /* 슬라이드 */
+    .slider .slide img {
+        width: 60vw;
+    }
+
+    /* 키즈 크래프 */
+    .contWrap .graph {
+        position: relative;
+        left: 3.5vw;
+        top: 1vh;
+    }
+
+    .contWrap .graph img {
+        width: 12vw;
+    }
+
+
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px), screen and (min-height: 760px) and (max-height: 1023px)
+and (orientation: landscape) {
+
+}
+
+
+/* 모바일 화면 */
+@media screen and (max-width: 767px), screen and (max-height: 479px) and (orientation: landscape) {
+}
+
+
 
