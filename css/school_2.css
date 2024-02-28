@@ -179,7 +179,7 @@ and (orientation: landscape) {*/
     .contWrap .graph {
         position: relative;
         left: 38vw;
-        top: -150px;
+        top: -180px;
     }
 
     .contWrap .graph img {
@@ -509,7 +509,7 @@ and (orientation: landscape) {
     /* 밀크T 배너 */
     .banner {
         background-color: #353d57;
-        padding: 30vw;
+        padding: 25vw;
     }
 
     .banner .inner_content h2 {
@@ -518,12 +518,12 @@ and (orientation: landscape) {
     }
 
     .banner .inner_content h2 img {
-        width: 68vw;
+        width: 50vw;
     }
 
     /* 중점 학습 가이드 text */
     .txt_wrap {
-        padding: 40px 0 40px 0;
+        padding: 50px 0 50px 0;
         background-color: rgb(51, 55, 66);
         color: whitesmoke;
     }
@@ -533,7 +533,7 @@ and (orientation: landscape) {
         justify-content: center;
         position: relative;
         top: -1vh;
-        font-size: 0.7rem;
+        font-size: 1.0rem;
         color: #d9d6d6;
         /*letter-spacing: 1px; !* 글자 간격 *!*/
 
@@ -543,9 +543,9 @@ and (orientation: landscape) {
         display: flex;
         justify-content: center;
         position: relative;
-        font-size: 1.4rem;
+        font-size: 1.8rem;
         font-weight: bolder;
-        margin-top: 1.2vw;
+        margin-top: 0.8vw;
     }
 
     /* 중점 학습 가이드 강조 */
@@ -609,8 +609,11 @@ and (orientation: landscape) {
     /* 학습가이드 text */
     .content_box .contWrap {
         display: block;
-        width: 500px;
-        height: 200px;
+        width: 100vw;
+        height: 25vh;
+        position: relative;
+        left: 10vw;
+        top: -5vh;
     }
 
     .content_box .contWrap .guide, .contWrap .text {
@@ -621,11 +624,11 @@ and (orientation: landscape) {
 
     .content_box .contWrap .guide {
         position: relative;
-        left: 210px;
+        left: 45vw;
         font-size: 1rem;
         /*border: 1px solid silver;*/
         width: 95px;
-        padding: 5px 0 5px 5px;
+        padding: 8px 2px 8px 5px;
         margin-bottom: 10px;
         border-radius: 15px;
         color: white;
@@ -652,12 +655,12 @@ and (orientation: landscape) {
     }
 
     .inner_content .text h3 {
-        font-size: 1.8rem;
+        font-size: 2rem;
         margin-bottom: 1vw;
     }
 
     .inner_content .text p {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
         margin-top: 1rem;
     }
 
