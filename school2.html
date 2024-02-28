@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, max-scale=2.0">
     <link rel="stylesheet" href="css/school_2.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
@@ -14,71 +15,42 @@
 <div id="wrap">
     <header>
         <!-- 메인 메뉴  -->
-        <div class="header_wrap">
-            <nav class="menu">
-                <ul class="main_menu">
-                    <li class="logo">
-                        <a href="#">
-                            <img src="img/logo.png" alt="밀크T 초등 로고">
-                        </a>
-                    </li>
-                    <li class="dept1">
-                        <a href="#">AI Genia.</a>
-                        <ul class="inner_menu">
-                            <li class="dept2">
-                                <a href="#">AI Genia</a>
-                            </li>
-                            <li class="dept2">
-                                <a href="#">AI 학습 기술 특허</a>
-                            </li>
-                            <li class="dept2">
-                                <a href="#">AI 내전적 기술</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dept1">
-                        <a href="#">학교 공부</a>
-                        <ul class="inner_menu">
-                            <li class="dept2">
-                                <a href="#">밀크T메뉴 구성</a>
-                            </li>
-                            <li class="dept2">
-                                <a href="#">학년별 학습 가이드</a>
-                            </li>
-                            <li class="dept2">
-                                <a href="#">과목별 학교 공부</a>
-                            </li>
-                            <li class="dept2">
-                                <a href="#">실력평가</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dept1">
-                        <a href="#">수준별 국·영·수</a>
-                        <ul class="inner_menu">
-                            <li class="dept2">
-                                <a href="#">수준별 국어</a>
-                            </li>
-                            <li class="dept2">
-                                <a href="#">수준별 영어</a>
-                            </li>
-                            <li class="dept2">
-                                <a href="#">수준별 수학</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dept1">
-                        <a href="#">학습 자료실</a>
-                        <ul class="inner_menu">
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-            <div class="icon">
-                <a href="#"><img src="img/join.png" alt="join"></a>
-                <a href="#"><img src="img/search.png" alt="search"></a>
-            </div>
-        </div>
+        <nav class="navbar">
+            <a href="#"><img src="img/logo.png" alt="logo"></a>
+            <ul class="navbar_menu">
+                <li class="menu_li"><a href="#genia">AI Genia.</a></li>
+
+                <li class="menu_li"><a href="#school">학교 공부</a>
+                    <ul class="inner_school">
+                        <li><a href="#">밀크T 메뉴 구성</a></li>
+                        <li><a href="#">학년별 학습 가이드</a></li>
+                        <li><a href="#">과목별 학교 공부</a></li>
+                        <li><a href="#">실력 평가</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu_li"><a href="#level">수준별 국 영 수</a>
+                    <ul class="inner_level">
+                        <li><a href="#">국어</a></li>
+                        <li><a href="#">영어</a></li>
+                        <li><a href="#">수학</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu_li"><a href="#">학습 자료실</a></li>
+
+            </ul>
+
+            <ul class="navbar_icon">
+                <li><a href="#"><img src="img/join.png" alt="login"></a></li>
+                <li><a href="#"><img src="img/search.png" alt="search"></a></li>
+            </ul>
+
+            <a href="#" class="navbar_toggleBtn">
+                <img src="img/hamburger.png" alt="hamburger">
+            </a>
+
+        </nav>
     </header>
     <div class="content">
         <!-- 배너 -->
@@ -118,15 +90,15 @@
                     </div>
                     <div class="inner_content">
                         <ul class="contWrap">
-                        <li class="guide">학습가이드</li>
-                        <li class="text">
-                            <h3>공부 흥미 시작 단계</h3>
-                            <p>기초 학습을 강화하고 학교 생활을 준비하는시기!<br> 게임형 콘텐츠로 학습 흥미 유발이 필요합니다.</p>
-                        </li>
-                        <li class="graph">
-                            <img src="img/그래프_키즈.png" alt="그래프 이미지_키즈">
-                        </li>
-                    </ul>
+                            <li class="guide">학습가이드</li>
+                            <li class="text">
+                                <h3>공부 흥미 시작 단계</h3>
+                                <p>기초 학습을 강화하고 학교 생활을 준비하는시기!<br> 게임형 콘텐츠로 학습 흥미 유발이 필요합니다.</p>
+                            </li>
+                            <li class="graph">
+                                <img src="img/그래프_키즈.png" alt="그래프 이미지_키즈">
+                            </li>
+                        </ul>
                         <div class="slide_content slideKids">
                             <ul class="slider">
                                 <li class="slide">
@@ -227,5 +199,6 @@
     </footer>
 </div>
 <script defer src="js/school_2.js"></script>
+<script defer src="js/header.js"></script>
 </body>
 </html>
