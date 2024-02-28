@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#wrap{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+/* 모바일 화면*/
+@media screen and (max-width: 767px ), screen and (max-height: 479px) and (orientation: landscape) {
+
+}
