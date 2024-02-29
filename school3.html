@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>과목별 학교 공부</title>
-
+    <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, max-scale=2.0">
     <link rel="stylesheet" href="css/school_3.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 <div id="wrap">
@@ -51,46 +55,67 @@
     </header>
     <div class="main_content">
         <nav>
-            <ul>
-                <li><a href="#"><img src="" alt="">밀크T<br>메뉴 구성</a></li>
-                <li class="on"><a href="#"><img src="" alt="">과목별<br> 학교 공부</a></li>
-                <li><a href="#"><img src="" alt="">실력평가</a></li>
-                <li><a href="#"><img src="" alt="">CBT <br>학업성취도<br> 평가</a></li>
+            <ul class="tabNav">
+                <li>
+                    <a href="#">
+                        <img class="icon_on" src="img/icon_pencil_on.png" alt="">
+                        <img class="icon_off" src="img/icon_pencil_off.png" alt="">
+                        <span>밀크T<br>메뉴 구성</span></a></li>
+                <li>
+                    <a href="#">
+                        <img class="icon_on" src="img/icon_book_on.png" alt="">
+                        <img class="icon_off" src="img/icon_book_off.png" alt="">
+                        <span>학년별<br>학습 가이드</span></a></li>
+                <li>
+                    <a href="#">
+                        <img class="icon_on" src="img/icon_school_on.png" alt="">
+                        <img class="icon_off" src="img/icon_school_off.png" alt="">
+                        <span>과목별<br>학교 공부</span></a></li>
+                <li>
+                    <a href="">
+                        <img class="icon_on" src="img/icon_exam_on.png" alt="">
+                        <img class="icon_off" src="img/icon_exam_off.png" alt="">
+                        <span>실력평가</span></a></li>
             </ul>
         </nav>
+
         <div class="inner_content">
             <ul class="school3">
                 <li class="title">밀크T 과목별 학교 공부</li>
-                <li><img src="" alt=""></li>
+                <li><img src="img/과목별_1.jpg" alt="과목별1"></li>
             </ul>
-            <ul class="subject">
+            <div class="subject">
                 <li class="title">과목별 특징</li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-            </ul>
+                <li class="sub_img">
+                        <li class="sub"><img src="img/과목별_2-1.jpg" alt="과목별2-1"></li>
+                        <li class="sub"><img src="img/과목별_2-2.jpg" alt="과목별2-2"></li>
+                        <li class="sub"><img src="img/과목별_2-3.jpg" alt="과목별2-3"></li>
+                        <li class="sub"><img src="img/과목별_2-4_.jpg" alt="과목별2-4"></li>
+                        <li class="sub"><img src="img/과목별_2-5_.jpg" alt="과목별2-5"></li>
+                        <li class="sub"><img src="img/과목별_2-6_.jpg" alt="과목별2-6"></li>
+                </li>
+            </div>
             <ul class="middle">
                 <li class="title">중학 특강</li>
-                <li><img src="" alt=""></li>
-                <li>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </li>
+                <li class="middle_1"><img src="img/중학특강_1.jpg" alt="중학특강1"></li>
+                <ul class="middle_2">
+                    <img src="img/중학특강_2.jpg" alt="중학특강2">
+                    <img src="img/중학특강_3.jpg" alt="중학특강3">
+                    <img src="img/중학특강_4.jpg" alt="중학특강4">
+                </ul>
             </ul>
             <ul class="lecture">
                 <li class="title">강좌별 특징</li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
+                <ul class="lecture_2">
+                    <li><img src="img/강좌별_1.jpg" alt="강좌별_1"></li>
+                    <li><img src="img/강좌별_2.jpg" alt="강좌별_2"></li>
+                </ul>
             </ul>
             <ul class="start">
                 <li class="title_2">지금 바로 밀크T 학습을 시작하시겠습니까?</li>
                 <li class="btn">
-                    <a href="#">밀크T 무료체험 ></a>
-                    <a href="#">밀크T 구매하기 ></a>
+                    <button type="button" id="free">밀크T 무료체험 ></button>
+                    <button type="button" id="buy">밀크T 구매하기 ></button>
                 </li>
             </ul>
         </div>

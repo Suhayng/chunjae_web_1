@@ -1,12 +1,232 @@
-*{
+* {
     margin: 0;
     padding: 0;
+
 }
 
-#wrap{
+.sub {
+    list-style: none;
+}
+
+#wrap {
     width: 100%;
     margin: 0 auto;
+    font-family: "Noto Sans KR", sans-serif;
+
 }
+
+.main_content {
+    background-color: #F6F6F6;
+}
+
+/* 메뉴바 - 공통  */
+/*내부 메뉴 네비게이션*/
+.main_content nav {
+    padding: 2vw 0 0.8vw 0;
+}
+
+.tabNav {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.tabNav li {
+    display: inline-block;
+}
+
+.tabNav li a {
+    text-decoration: none;
+    color: #1f1f1f;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    width: 16vw;
+    height: 50px;
+    border-radius: 3vw;
+
+    font-size: 0.9em;
+
+    line-height: 1.2em;
+    letter-spacing: -0.03rem;
+
+}
+
+/*아이콘 이미지*/
+.tabNav li img {
+    width: 30px;
+    height: 30px;
+    margin-right: 1.2vw;
+}
+
+/*마우스 오버*/
+.tabNav li.on a {
+    background-color: #3d8af0;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tabNav li .icon_on {
+    display: none;
+}
+
+.tabNav .on .icon_off {
+    display: none;
+}
+
+.tabNav .on .icon_on {
+    display: flex;
+}
+
+/* 메인 content */
+.inner_content {
+    background-color: white;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    width: 72vw;
+    position: relative;
+    left: 13.5vw;
+    border-radius: 30px;
+}
+
+.inner_content ul {
+    width: 72vw;
+}
+
+/* Title */
+.school3 {
+    margin: 1vw;
+}
+
+.title {
+    /*text-align: center;*/
+    padding: 2vw 2vw 2vw 0;
+    font-size: 1.9rem;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    width: 72vw;
+
+}
+
+/* 과목별 학교 공부 이미지 */
+.school3 ul li {
+    display: flex;
+}
+
+
+.school3 li img, .middle .middle_1 img {
+    width: 60vw;
+    margin-left: 6vw;
+}
+
+/* 과목별 특징 이미지 */
+
+.subject {
+    margin: 1.2vw;
+    width: 16vw;
+}
+
+.subject ul li {
+    width: 72vw;
+
+}
+
+.subject .sub_img {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    /*width: 72vw;*/
+}
+
+
+.subject .sub_img .sub {
+    margin: 1vw;
+}
+
+.subject .sub_img .sub img {
+    width: 88%;
+}
+
+/*중학 특강 */
+.middle_2, .lecture_2 {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.middle_2 img {
+    width: 280px;
+    margin: 1vw;
+}
+
+/* 강좌별 특징*/
+.lecture {
+    background-color: #CAD8D8;
+    /*padding-bottom: 5vw;*/
+    width: 500vw;
+}
+
+.lecture .title {
+    color: #575757;
+    /*padding: 2vw;*/
+}
+
+.lecture_2 img {
+    width: 450px;
+    padding-right: 2vw;
+    padding: 0 1vw 2vw 1vw;
+
+}
+
+/* 학습 유도 박스 */
+.start {
+}
+
+.title_2 {
+    /*text-align: center;*/
+    padding: 5vw 2vw 2vw 0;
+    font-size: 2.0rem;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    width: 72vw;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn #free, #buy {
+    padding: 1.5vw 3vw;
+    margin: 0 1vw 4vw 1vw;
+    font-size: 17px;
+    border: none;
+}
+
+.btn #free {
+    background-color: #fdbc98;
+}
+
+.btn #buy {
+    background-color: #5A7490;
+}
+
+.btn button a {
+    color: white;
+    font-size: 1.2rem;
+
+}
+
+
 
 
 
@@ -15,5 +235,50 @@
 
 /* 모바일 화면*/
 @media screen and (max-width: 767px ), screen and (max-height: 479px) and (orientation: landscape) {
+    .sub {
+        list-style: none;
+    }
+    /*내부 메뉴 네비게이션*/
+    .tabNav {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        width: 75vw;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .tabNav li {
+        flex-basis: 50%;
+        box-sizing: border-box;
+        margin: 1vh auto;
+    }
+
+    .tabNav li a {
+        text-decoration: none;
+        color: #1f1f1f;
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: white;
+        width: 35vw;
+        height: 50px;
+        border-radius: 4vw;
+
+        font-size: 0.9em;
+
+        line-height: 1.2em;
+        letter-spacing: -0.03rem;
+    }
+
+    /*아이콘 이미지*/
+    .tabNav li a img {
+        width: 25px;
+        height: 25px;
+        margin-right: 1.7vw;
+    }
+
 
 }
