@@ -1,6 +1,5 @@
-@media screen and (min-width: 768px)
-, screen and (min-height: 760px)
-and (orientation: landscape) {
+@media screen and (max-width: 2560px)
+ {
 
     * {
         margin: 0;
@@ -25,8 +24,9 @@ and (orientation: landscape) {
     /* body 부분*/
     /* 밀크T 배너 */
     .banner {
-        background-color: #353d57;
-        padding: 5vw;
+        /*background-color: #353d57;*/
+        background: url("../img/background.jpg");
+        padding: 10vw;
     }
 
     .banner .inner_content h2 {
@@ -36,6 +36,11 @@ and (orientation: landscape) {
 
     .banner .inner_content h2 img {
         width: 20vw;
+    }
+
+     h2 {
+        opacity: 0;
+        transition: all 1s ease-in-out;
     }
 
     /* 중점 학습 가이드 text */
@@ -201,14 +206,25 @@ and (orientation: landscape) {
     }
 
     .txt_wrap_2 .inner_content {
-        font-size: 2rem;
+        font-size: 1.4rem;
         letter-spacing: 0.4rem;
     }
 
-    .txt_wrap_2 .inner_content h3 span {
+    .txt_wrap_2 .inner_content h2 span {
         color: #3dc6f3;
     }
 
+    /* 스크롤 애니메이션 */
+    .up {
+        opacity: 0;
+        transition: all 0.8s ease;
+        transform: translate(0, 100px);
+    }
+
+    .up.show {
+        opacity: 1;
+        transform: none;
+    }
 }
 
 /* 모바일 화면 */
@@ -235,7 +251,7 @@ and (orientation: landscape) {
 
     /* 밀크T 배너 */
     .banner {
-        background-color: #353d57;
+        background: url("../img/background.jpg");
         padding: 25vw;
     }
 
@@ -424,6 +440,17 @@ and (orientation: landscape) {
         color: #3dc6f3;
     }
 
+    /* 스크롤 애니메이션 */
+    .up {
+        opacity: 0;
+        transition: all 0.8s ease;
+        transform: translate(0, 100px);
+    }
+
+    .up.show {
+        opacity: 1;
+        transform: none;
+    }
 
 }
 
