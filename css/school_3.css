@@ -293,34 +293,34 @@ h3 {
         /*display: flex;*/
         /*flex-direction: column;*/
         /*justify-content: center;*/
-        width: 88vw;
+        width: 95vw;
         position: relative;
-        left: 4.7vw;
+        left: 2vw;
         border-radius: 30px;
     }
 
     /* 타이틀 */
     h3 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         position: relative;
-        left: 7.5vw;
+        left: 9.5vw;
     }
 
     .school3 img, .middle img {
-        width: 87vw;
+        width: 95vw;
         position: relative;
-        left: -3vw;
+        left: -4vw;
     }
 
 
     /* 과목별 특징 이미지 */
     .subject {
         margin: 1.2vw;
-        width: 88vw;
+        width: 90vw;
     }
 
     .subject .sub_img sub {
-        width: 88vw;
+        width: 90vw;
 
     }
 
@@ -328,7 +328,7 @@ h3 {
         display: flex;
         justify-content: center;
         flex-flow: wrap;
-        width: 86vw;
+        width: 90vw;
         position: relative;
         left: 3vw;
     }
@@ -344,7 +344,7 @@ h3 {
 
     /*중학 특강 */
     .middle_1 li img {
-        width: 88vw;
+        width: 94vw;
     }
 
     .middle_2 li, .lecture_2 {
@@ -354,7 +354,7 @@ h3 {
     }
 
     .middle_2 li img {
-        width: 310px;
+        width: 290px;
         margin: 1vw 0vw 3vw 7vw;
     }
 
@@ -387,7 +387,7 @@ h3 {
         font-weight: bolder;
         display: flex;
         justify-content: center;
-        width: 88vw;
+        width: 94vw;
     }
 
     .btn {
