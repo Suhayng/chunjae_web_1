@@ -61,3 +61,14 @@ function showSlide() {
     setTimeout(showSlide, 5000); //5초마다 이미지 변경
 }
 
+/* top 버튼 */
+let btnScrollToTop = document.querySelector('.top');
+
+btnScrollToTop.addEventListener('click', function () {
+
+    window.scrollTo({
+        left : 0,
+        top: 0,
+        behavior: 'smooth'
+    })
+})

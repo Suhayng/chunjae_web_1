@@ -176,9 +176,7 @@
 
     .lecture_2 img {
         width: 450px;
-        padding-right: 2vw;
-        padding: 0 1vw 2vw 1vw;
-
+        padding: 0 2vw 2vw 1vw;
     }
 
     /* 학습 유도 박스 */
@@ -217,6 +215,40 @@
         font-size: 1.2rem;
 
     }
+
+    /* 스크롤 애니메이션 up */
+    .up {
+        opacity: 0;
+        transition: all 0.8s ease-in-out;
+        transform: translate(0, 100px);
+    }
+
+    .up.show {
+        opacity: 1;
+        transform: none;
+    }
+
+    /* 챗봇, top 버튼 */
+    .chat {
+        position: fixed;
+        bottom: 100px;
+        right: 5px;
+    }
+
+    .chat img {
+        width: 110px;
+    }
+
+    .top {
+        position: fixed;
+        bottom: 55px;
+        right: 37px;
+    }
+
+    .top img {
+        width: 40px;
+    }
+
  }
 
 /* 모바일 화면*/
@@ -363,7 +395,7 @@
 
     .middle_2 li img {
         width: 290px;
-        margin: 1vw 0vw 3vw 7vw;
+        margin: 1vw 0 3vw 7vw;
     }
 
 
@@ -381,10 +413,8 @@
     }
 
     .lecture_2 img {
-        width: 420px;
-        padding-right: 2vw;
-        padding: 1vw 1vw 4vw 1vw;
-
+        width: 380px;
+        padding: 1vw 2vw 4vw 1vw;
     }
 
     /* 학습 유도 박스 */
@@ -422,6 +452,21 @@
         color: white;
         font-size: 1.2rem;
 
+    }
+
+    /* 챗봇, top 버튼 */
+    .chat img {
+        width: 80px;
+    }
+
+    .top {
+        position: fixed;
+        right: 28px;
+        bottom: 65px;
+    }
+
+    .top img {
+        width: 30px;
     }
 
 

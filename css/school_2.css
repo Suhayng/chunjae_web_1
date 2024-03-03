@@ -212,7 +212,7 @@
 
     @keyframes fade {
         from {
-            opacity: .4
+            opacity: 0.4
         }
         to {
             opacity: 1;
@@ -247,6 +247,27 @@
     .up.show {
         opacity: 1;
         transform: none;
+    }
+
+    /* 챗봇, top 버튼 */
+    .chat {
+        position: fixed;
+        bottom: 100px;
+        right: 5px;
+    }
+
+    .chat img {
+        width: 110px;
+    }
+
+    .top {
+        position: fixed;
+        bottom: 55px;
+        right: 37px;
+    }
+
+    .top img {
+        width: 40px;
     }
 }
 
@@ -496,6 +517,21 @@
     .up.show {
         opacity: 1;
         transform: none;
+    }
+
+    /* 챗봇, top 버튼 */
+    .chat img {
+        width: 80px;
+    }
+
+    .top {
+        position: fixed;
+        right: 28px;
+        bottom: 65px;
+    }
+
+    .top img {
+        width: 30px;
     }
 
 }
