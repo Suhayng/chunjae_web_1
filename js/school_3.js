@@ -4,11 +4,11 @@
 let listicon = document.querySelectorAll('.tabNav li');
 
 listicon.forEach(item => {
-    item.addEventListener('mouseover', function() {
+    item.addEventListener('mouseover', function () {
         item.classList.add('on');
     });
 
-    item.addEventListener('mouseout', function() {
+    item.addEventListener('mouseout', function () {
         item.classList.remove('on');
     });
 });
@@ -36,8 +36,23 @@ let btnScrollToTop = document.querySelector('.top');
 btnScrollToTop.addEventListener('click', function () {
 
     window.scrollTo({
-        left : 0,
+        left: 0,
         top: 0,
         behavior: 'smooth'
-    })
-})
+    });
+});
+
+/* 무료체험 팝업창 */
+// 팝업 클릭햘 때
+function openPopup() {
+    let popup = document.getElementById('popup');
+    popup.style.visibility = 'visible';
+    popup.style.opacity = '1';
+}
+// 팝업 닫을 때
+function closePopup() {
+    let popup = document.getElementById("popup");
+    popup.style.visibility = "hidden";
+    popup.style.opacity = '0';
+}
+

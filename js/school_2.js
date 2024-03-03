@@ -1,5 +1,4 @@
 "use strict"
-/* 스크롤 애니메이션 */
 
 /* 배너 문구 애니메이션 */
 let observer = new IntersectionObserver((e) => {
@@ -13,7 +12,7 @@ let observer = new IntersectionObserver((e) => {
     })
 })
 
-let inner = document.querySelectorAll("h2")
+let inner = document.querySelectorAll('h2')
 // html 요소 화면 등장하는지 감시해줌
 observer.observe(inner[0]);
 observer.observe(inner[1]);
@@ -36,29 +35,29 @@ let saFunc = function () {
 window.addEventListener('load', saFunc);
 window.addEventListener('scroll', saFunc);
 
-/* 슬라이드 효과 */
+/* 자동 슬라이드 효과 */
 let slideIndex = 0;
-    showSlide();
+showSlide();
 
 function showSlide() {
-    let slide = document.getElementsByClassName("slide");
-    let slide1 = document.getElementsByClassName("slide1");
-    let slide2 = document.getElementsByClassName("slide2");
+    let slide = document.getElementsByClassName('slide');
+    let slide1 = document.getElementsByClassName('slide1');
+    let slide2 = document.getElementsByClassName('slide2');
 
     for (let i = 0; i < slide.length; i++) {
-        slide[i].style.display = "none";
-        slide1[i].style.display = "none";
-        slide2[i].style.display = "none";
+        slide[i].style.display = 'none';
+        slide1[i].style.display = 'none';
+        slide2[i].style.display = 'none';
     }
     slideIndex++;
     if (slideIndex > slide.length) {
         slideIndex = 1;
     }
-    slide[slideIndex - 1].style.display = "block";
-    slide1[slideIndex - 1].style.display = "block";
-    slide2[slideIndex - 1].style.display = "block";
+    slide[slideIndex - 1].style.display = 'block';
+    slide1[slideIndex - 1].style.display = 'block';
+    slide2[slideIndex - 1].style.display = 'block';
 
-    setTimeout(showSlide, 5000); //5초마다 이미지 변경
+    setTimeout(showSlide, 4000); // 4초마다 이미지 변경
 }
 
 /* top 버튼 */
@@ -67,7 +66,7 @@ let btnScrollToTop = document.querySelector('.top');
 btnScrollToTop.addEventListener('click', function () {
 
     window.scrollTo({
-        left : 0,
+        left: 0,
         top: 0,
         behavior: 'smooth'
     })
